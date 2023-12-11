@@ -5,7 +5,7 @@
         <container> 
             <row> 
              <div class="column">
-                <div class="h3"> À propos</div>
+                <div class="h3"> Greta </div>
              </div>
              <div class="column">
                 <div class="h3"> Profils </div>
