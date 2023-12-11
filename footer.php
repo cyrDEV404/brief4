@@ -1,4 +1,6 @@
-<html> 
+
+
+
     <footer> 
         <container> 
             <row> 
@@ -18,4 +20,5 @@
             </row>
         </container>
     </footer>
+</body>
 </html>
