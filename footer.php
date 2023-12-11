@@ -6,7 +6,6 @@
             <row> 
              <div class="column">
                 <div class="h3"> À propos</div>
-                    <p> </p>
              </div>
              <div class="column">
                 <div class="h3"> Profils </div>

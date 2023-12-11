@@ -7,3 +7,5 @@
     <script src="js/script.js" defer></script>
     <title>brief4-trombinoscope</title>
 </head>
+
+<body>
