@@ -1,7 +1,4 @@
-<?php 'header.php' ?>
-
-
-
+<?php include('header.php') ?>
     <header>        
         <nav class="container">
             <div>
@@ -30,6 +27,4 @@
                 <label for="competence-2">Obtenir des bananes</label><br>  
         </nav> 
     </header>
-
-
-<?php 'footer.php' ?>
+<?php include('footer.php') ?>
