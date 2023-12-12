@@ -76,7 +76,7 @@
                    </ul>
                 </div>
                 <div class="column">
-                   <a href= "portfolios.ern-mende.fr" class="H3"> PORTFOLIOS </a>
+                   <h3> PORTFOLIOS </H3>
                    <ul class="footer__address">
                        <li>
                            43 Raymouth Rd. Baltemoer, London 3910
