@@ -25,6 +25,7 @@ h4{
 .header{
   display: flex;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 .promotion{
   display: flex;
@@ -54,7 +55,11 @@ h4{
   justify-content: center;
    width: 80%;
    border-radius: 20px;
+    background-image: url(https://icones.pro/wp-content/uploads/2021/06/icone-loupe-noir.png);
+    background-repeat: no-repeat;
+    text-indent: 20px;
 }
+
 
 .choix{
   display: flex;
