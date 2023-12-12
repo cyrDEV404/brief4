@@ -8,7 +8,6 @@
     <script src="js/script.js" defer></script>
     <title>brief4-trombinoscope</title>
 </head>
-
     <footer> 
         <container> 
             <row> 
@@ -23,6 +22,7 @@
              </div>
              <div class="column">
                 <div class="h3">Notre site</div>
+                
              </div>
             </row>
         </container>
