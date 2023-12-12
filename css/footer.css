@@ -6,13 +6,19 @@
 
 a {
     text-decoration: none;
+    display: flex;
     text-align: center;
+    padding-left: 40px;
   }
 
 .footer__address li {
     list-style: none;
 }
 
+h3 {
+  display: flex;
+  text-align: center;
+}
 
 .column {
     float: left;
