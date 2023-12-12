@@ -115,10 +115,15 @@ footer h3 {
   background-color: blanchedalmond;
 }
 
+.footer__address__portfolio {
+  margin-right: 20px;
+  list-style: none;
+}
+
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
