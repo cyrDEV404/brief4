@@ -4,7 +4,7 @@
 
 /** Css for Footer **/
 
-a {
+footer h3 {
     text-decoration: none;
     display: flex;
     text-align: center;
@@ -13,11 +13,6 @@ a {
 
 .footer__address li {
     list-style: none;
-}
-
-h3 {
-  display: flex;
-  text-align: center;
 }
 
 .column {
