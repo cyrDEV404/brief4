@@ -91,5 +91,30 @@ h4{
   }
 
 
+/**__________________________________footer__________________________________*/
 
+footer h3 {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  padding-left: 40px;
+}
+
+.footer__address li {
+  list-style: none;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-top: 50px;
+  background-color: blanchedalmond;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
