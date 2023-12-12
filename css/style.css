@@ -1,4 +1,70 @@
 
+
+body{
+  border-color: blue;
+  border-style: solid;
+  border-width: 10px;
+}
+
+/**___________________________header_____________________*/
+
+header {
+  width: 100%;
+
+}
+h1{
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  margin-top: unset;
+}
+
+h4{
+  margin: unset;
+}
+.header{
+  display: flex;
+  margin-left: 30px;
+}
+.promotion{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin-left: 30px;
+}
+.promotion select{
+  border-radius: 20px;
+}
+.competences{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+ 
+}
+.recherche{
+  width: 50%;
+  margin-left: 50px;
+  padding-top: 15px
+}
+
+.recherche input{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+   width: 80%;
+   border-radius: 20px;
+}
+
+.choix{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+}
+
+/**__________________________________header________________________________*/
+
 /* Card */
 .card-holder {
     width: 280px;
