@@ -1,7 +1,7 @@
 <?php 'header.php' ?>
 
 
-<body>
+
     <header>        
         <nav class="container">
             <div>
