@@ -6,16 +6,19 @@
 
 a {
     text-decoration: none;
+    text-align: center;
   }
 
-.footer {
-    margin-top: 150px;
-    padding-top: 100px;
+.footer__address li {
+    list-style: none;
 }
+
 
 .column {
     float: left;
     width: 25%;
+    margin-top: 50px;
+    background-color: blanchedalmond;
   }
   
   /* Clear floats after the columns */
