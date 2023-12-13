@@ -1,4 +1,4 @@
-const apiUrl = '';
+const apiUrl = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants';
 const dataContainer = document.getElementById('dataContainer');
 
 fetch(apiUrl)
