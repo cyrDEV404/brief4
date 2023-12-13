@@ -1,4 +1,4 @@
-const apiUrl = 'https://portfolios.ern-mende.fr/';
+const apiUrl = '';
 const dataContainer = document.getElementById('dataContainer');
 
 fetch(apiUrl)
