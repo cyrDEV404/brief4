@@ -1,30 +1,70 @@
 <?php include('header.php') ?>
-    <header>        
-        <nav class="container">
-            <div>
-                <h1>Trombinoscope L'Ecole Du Numérique</h1>
-            </div>
-            <div>
-                <label for="promo">Choisissez une promotion:</label>
-                    <select name="promo" id="promo">
-                        <option value="2021-2022">2024-2025</option>    
-                        <option value="2022-2023">2022-2023</option>
-                        <option value="2023-2024">2024-2025</option>                    
-                    </select>
-            </div>
-            <div class="search">
-                <input type="search" placeholder="Search">
-            </div>
-            </div>
-            <div class="competences">
-                <h4>Profil</h4>
-                <input type="checkbox" id="competence-1" value="competence-1">
-                <label for="competence-1"> FrontEnd</label><br>
-                <input type="checkbox" id="competence-2" value="competence-2">
-                <label for="competence-2"> BackEnd</label><br>             
-            </div>
-            <input type="checkbox" id="competence-2" value="competence-2">
-                <label for="competence-2">Obtenir des bananes</label><br>  
-        </nav> 
-    </header>
+
+    <section>
+        <div class="card-holder">
+            <img src="https://picsum.photos/id/237/280/250" alt="Image 1">
+            <h3>Card 1</h3>
+            <a href="https://www.linkedin.com/"><img class="icon_img" src="image/linkedin.png" alt=""></a>
+        </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/238/280/250" alt="Image 2">
+            <h3>Card 2</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/239/280/250" alt="Image 3">
+            <h3>Card 3</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/240/280/250" alt="Image 4">
+            <h3>Card 4</h3>
+          </div>
+
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/237/280/250" alt="Image 1">
+            <h3>Card 1</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/238/280/250" alt="Image 2">
+            <h3>Card 2</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/239/280/250" alt="Image 3">
+            <h3>Card 3</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/240/280/250" alt="Image 4">
+            <h3>Card 4</h3>
+          </div>
+
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/237/280/250" alt="Image 1">
+            <h3>Card 1</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/238/280/250" alt="Image 2">
+            <h3>Card 2</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/239/280/250" alt="Image 3">
+            <h3>Card 3</h3>
+          </div>
+          
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/240/280/250" alt="Image 4">
+            <h3>Card 4</h3>
+          </div>
+
+          <div class="card-holder">
+            <img src="https://picsum.photos/id/240/280/250" alt="Image 4">
+            <h3>Card 4</h3>
+          </div>
+    </section>
 <?php include('footer.php') ?>

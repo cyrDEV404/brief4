@@ -1,20 +1,37 @@
 <body>
-<div class="card-holder">
-  <img src="https://picsum.photos/id/237/280/250" alt="Image 1">
-  <h3>Card 1</h3>
-</div>
+<header> 
+    <div>
+       <h1>Trombinoscope L'Ecole Du Numérique</h1>
+   </div>   
 
-<div class="card-holder">
-  <img src="https://picsum.photos/id/238/280/250" alt="Image 2">
-  <h3>Card 2</h3>
-</div>
+   <nav class="header">
+       <div class="promotion">
+           <label for="promo">Promotion:</label>
+           <select name="promo" id="promo">
+               <option value="2021-2022">2021-2022</option>    
+               <option value="2022-2023">2022-2023</option>
+               <option value="2023-2024">2023-2024</option>                    
+           </select>
+       </div>
 
-<div class="card-holder">
-  <img src="https://picsum.photos/id/239/280/250" alt="Image 3">
-  <h3>Card 3</h3>
-</div>
-
-<div class="card-holder">
-  <img src="https://picsum.photos/id/240/280/250" alt="Image 4">
-  <h3>Card 4</h3>
-</div>
+       <div class="recherche">
+           <input type="search" id="champ"  placeholder="Search">
+       </div>
+       
+       <div class="competences">
+           <h4>Profil</h4>
+           <div class="choix">
+               <label for="competence-1"> FrontEnd</label>
+               <input type="checkbox" id="competence-1" value="competence-1">                   
+           </div>
+           <div class="choix">
+               <label for="competence-2"> BackEnd</label>
+               <input type="checkbox" id="competence-2" value="competence-2">                    
+           </div>
+           <div class="choix">
+               <label for="competence-2">Obtenir des bananes</label>
+               <input type="checkbox" id="competence-3" value="competence-3">                  
+           </div>
+       </div>
+   </nav> 
+</header>
