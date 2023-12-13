@@ -5,7 +5,8 @@ body{
     border-width: 10px;
     margin: 60px;
     margin-top: 60px;
-    padding: 50px;
+    padding: 20px;
+    align-items: center;
   }
 
 /**___________________________header_____________________*/
@@ -81,6 +82,9 @@ h4{
 /**__________________________________header________________________________*/
 
 /* Card */
+
+
+
 .card-holder {
     width: 280px;
     height: 380px;
@@ -108,6 +112,10 @@ h4{
 
 /**__________________________________footer__________________________________*/
 
+footer{
+margin: 0;
+}
+
 footer h3 {
   text-decoration: none;
   display: flex;
@@ -115,27 +123,28 @@ footer h3 {
   padding-left: 40px;
 }
 
+
 .footer__address li {
   list-style: none;
 }
 
 .column {
-  float: left;
   width: 25%;
+  height:150px;
   margin-top: 50px;
   background-color: blanchedalmond;
+ 
 }
 /** Css for Footer **/
 
 .footer__address__portfolio {
-  margin-right: 20px;
+ padding-right: 20px;
   list-style: none;
 }
 
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.style__footer{
+  font-family: 'Lucida Sans';
+  display: flex;
+  flex-direction: row;
 }
