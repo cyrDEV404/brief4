@@ -42,7 +42,7 @@
                    <ul class="footer__address__portfolio">
                        <li>
                         <p>
-                            Dans cette collection de portfolios, vous trouverez un aperçu des diverses compétences de nos talentueux <a href= "portfolios.ern-mende.fr"> diplômés.</a>
+                            Vous trouverez un aperçu des diverses compétences de nos talentueux <a href= "portfolios.ern-mende.fr"> diplômés.</a>
                         </p>
                        </li>
                    </ul>
