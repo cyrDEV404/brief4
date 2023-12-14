@@ -55,7 +55,8 @@ h4{
 .recherche{
   width: 50%;
   margin-left: 80px;
-  padding-top: 15px
+  position: relative;
+  top: 15px;
 }
 
 .recherche input{
@@ -66,13 +67,21 @@ h4{
   height: 20px;
   border-radius: 20px;
   border-width: 1px;
-  background-image: url('../image/icone-loupe-noir.png');
-  background-repeat: no-repeat;
   text-indent: 30px;
-  background-position: 5px;
+
   
 }
+.recherche::before { 
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 14px; 
+  height: 14px;
+  background-image: url('../image/icone-loupe-noir.png');
+  background-repeat: no-repeat; 
 
+}
 .choix{
   display: flex;
   flex-direction: row-reverse;
