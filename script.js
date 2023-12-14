@@ -19,7 +19,7 @@ fetch(apiUrl)
     dataImage.src = data[0].image;
 
   }data.forEach(afficheData); 
-    dataImage.
+    
 })
 .catch(error => {
   console.error('There was a problem with the fetch operation:', error);

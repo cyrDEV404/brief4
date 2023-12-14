@@ -88,9 +88,8 @@ h4{
   justify-content: left;
 }
 
-/**__________________________________header________________________________*/
+/**__________________________________Card________________________________*/
 
-/* Card */
 
 
 
@@ -105,7 +104,7 @@ h4{
     text-align: center;
   }
   
-  .card-holder a img {
+.card-holder a img {
     width: 30px;
     height: 30px;
     object-fit: cover;
@@ -113,11 +112,14 @@ h4{
     border-top-right-radius: 10px;
   }
   
-  .card-holder h3 {
+.card-holder h3 {
     margin-top: 20px;
     font-size: 24px;
   }
-
+ .card-holder img{
+    max-width: 100px;
+   height: 100px;
+  }
 
 /**__________________________________footer__________________________________*/
 
