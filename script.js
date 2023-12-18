@@ -32,10 +32,11 @@ const ul = document.getElementById('list');
       divCard.appendChild(prenom);
       list.appendChild(divCard);
 
-      var annee = document.createElement('p');
-      annee.innerHTML = `${author.promotions}`;     
-      divCard.appendChild(annee);
-      list.appendChild(divCard);
+      // var promotion = document.createElement('p');   
+      // promotion.innerHTML = `${author.promotions}`;    
+
+      // divCard.appendChild(promotion);
+      // list.appendChild(divCard);
 
       let comp = document.createElement('p');
       comp.innerHTML = `${author.competences}`;
@@ -79,9 +80,11 @@ const ul = document.getElementById('list');
                     <option value="2023-2024">2023-2024</option>                    
                 </select>
             </div> */
-    fetch(url)
 
-  
+    const url1 = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions'
+
+
+    fetch(url)
 
     .then((response) => {
       return response.json();
@@ -108,3 +111,39 @@ const ul = document.getElementById('list');
   .catch(function(error) {
     console.log(data);
   });
+
+fetch(url1)
+
+  
+
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    let authors = data;
+    var promotions = authors[0] ['name'];
+
+
+    console.log(promotions)
+
+    authors.map(function(author) {
+
+    console.log(data.name)
+
+    var promotions = document.createElement('p');    
+
+    promotions.innerHTML = `${author.promotions}`;    
+
+    divCard.appendChild(promotions);
+    list.appendChild(divCard);
+    
+  });
+
+  input.appendChild(list1);
+
+})
+
+.catch(function(error) {
+  console.log(error);
+});
+  
