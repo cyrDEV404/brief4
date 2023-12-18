@@ -18,9 +18,7 @@ const ul = document.getElementById('list');
       //SECTION CARD
 
       let divCard = document.createElement('div');
-      divCard.className = "card-holder";
-      
-
+      divCard.className = "card-holder";     
 
       let nom = document.createElement('h2');
       nom.innerHTML = `${author.nom}`;
@@ -91,6 +89,10 @@ const ul = document.getElementById('list');
     })
     .then((data) => {
       let authors = data;
+      // var name = promotion;
+      //   name => Array[
+      //   "0", "name"
+      // ]
 
         authors.map(function(author) {
 
@@ -98,9 +100,12 @@ const ul = document.getElementById('list');
 
       let divCard = document.createElement('select');
       divCard.className = "header";
-      var annee = document.createElement('option');
-      annee.innerHTML = `${author.promotions}`;     
-      divCard.appendChild(annee);
+      
+      var promotion = document.createElement('option');
+      
+      promotion.innerHTML = `${author.promotions}`; 
+          
+      divCard.appendChild(promotion);
       list1.appendChild(divCard);
     });
 
@@ -136,7 +141,7 @@ fetch(url1)
 
     divCard.appendChild(promotions);
     list.appendChild(divCard);
-    
+
   });
 
   input.appendChild(list1);
