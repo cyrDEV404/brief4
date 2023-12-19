@@ -123,8 +123,10 @@ h4{
 
 /**__________________________________footer__________________________________*/
 
-footer{
-margin: 0;
+.footer{
+  margin: 0;
+  font-family: 'Lucida Sans';
+
 }
 
 footer h3 {
@@ -155,7 +157,30 @@ footer h3 {
 
 
 .style__footer{
-  font-family: 'Lucida Sans';
   display: flex;
   flex-direction: row;
 }
+
+.container{
+  max-width: auto;
+}
+
+.links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-item{
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  
+}
+
+.link-lk{
+  background: url('../image/linkedin.png');
+  background-size: cover;
+
+}
+

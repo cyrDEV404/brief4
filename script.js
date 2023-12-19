@@ -49,7 +49,14 @@ const ul = document.getElementById('list');
 
       
 
-    
+      let linkedin = document.createElement('a');     
+      linkedin.className = "links link-item link-lk";     
+ 
+      linkedin.href = `${author.link}`;
+       console.log(linkedin);
+      divCard.appendChild(linkedin);
+      list.appendChild(divCard);
+
 
 
       });
@@ -129,20 +136,20 @@ fetch(url1)
     var promotions = authors[0] ['name'];
 
 
-    console.log(promotions)
+    console.log('promo' + promotions)
 
     authors.map(function(author) {
 
-    console.log(data.name)
+      console.log(data.name)
 
-    var promotions = document.createElement('p');    
+      var promotions = document.createElement('p');    
 
-    promotions.innerHTML = `${author.promotions}`;    
+      promotions.innerHTML = `${author.promotions}`;    
 
-    divCard.appendChild(promotions);
-    list.appendChild(divCard);
+      divCard.appendChild(promotions);
+      list.appendChild(divCard);
 
-  });
+    });
 
   input.appendChild(list1);
 
