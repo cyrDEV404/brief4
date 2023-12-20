@@ -37,6 +37,8 @@ console.log(list)
       // divCard.appendChild(promotion);
       // list.appendChild(divCard);
 
+
+      // a mettre avec le endpoint competence dans les cards
       let comp = document.createElement('p');
       comp.innerHTML = `${author.competences}`;
       divCard.appendChild(comp);
