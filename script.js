@@ -1,6 +1,7 @@
 const url = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants';
 const list = document.createDocumentFragment();
 const ul = document.getElementById('list');
+console.log(list)
 
   fetch(url)
 
@@ -46,6 +47,7 @@ const ul = document.getElementById('list');
       images.src = `${author.image}`;
       divCard.appendChild(images);
       list.appendChild(divCard);
+
 
       
 
@@ -96,6 +98,8 @@ const ul = document.getElementById('list');
       // ]
 
         authors.map(function(author) {
+          
+
 
       console.log(data)
 
@@ -104,7 +108,7 @@ const ul = document.getElementById('list');
       
       var promotion = document.createElement('option');
       
-      promotion.innerHTML = `${author.promotions}`; 
+      promotion.innerHTML = `${author.name}`; 
           
       divCard.appendChild(promotion);
       list1.appendChild(divCard);
