@@ -50,11 +50,17 @@ const ul = document.getElementById('list');
       
 
       let linkedin = document.createElement('a');     
-      linkedin.className = "links link-item link-lk";     
+      linkedin.className = "card-holder link-item link-lk";     
  
       linkedin.href = `${author.link}`;
-       console.log(linkedin);
+      console.log(linkedin);
       divCard.appendChild(linkedin);
+      list.appendChild(divCard);
+
+
+      let promotion = document.createElement('p'); 
+      promotion.innerHTML = `${author.promotions}`;
+      divCard.appendChild(promotion);
       list.appendChild(divCard);
 
 
@@ -89,7 +95,7 @@ const ul = document.getElementById('list');
     const url1 = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions'
 
 
-    fetch(url)
+    fetch(url1)
 
     .then((response) => {
       return response.json();
@@ -123,39 +129,79 @@ const ul = document.getElementById('list');
   .catch(function(error) {
     console.log(data);
   });
+  const url2 = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/competences'
+  const boxlist = document.createDocumentFragment();
+  const checkbox = document.getElementById('boxlist');
 
-fetch(url1)
-
-  
+  fetch(url2)
 
   .then((response) => {
     return response.json();
   })
   .then((data) => {
     let authors = data;
-    var promotions = authors[0] ['name'];
+    // var name = promotion;
+    //   name => Array[
+    //   "0", "name"
+    // ]
 
+      authors.map(function(author) {
 
-    console.log('promo' + promotions)
+    console.log(data)
+    let divCard = document.createElement('div');
+      divCard.className = "card-holder";     
 
-    authors.map(function(author) {
+       // creating checkbox element
+       var checkbox = document.createElement('input');
+             
+       // Assigning the attributes
+       // to created checkbox
+       checkbox.type = "checkbox";
+       checkbox.name = "name";
+       checkbox.value = "value";
+       checkbox.id = "id";
 
-      console.log(data.name)
+      let divCompetences = document.createElement('div');
+      divCompetences.className = "competences choix";     
+      console.log(data)
+      var profil = document.createElement("checkbox");
+      profil.setAttribute("type", "checkbox");
+      profil.innerHTML = `${author.competences}`;
+      divCompetences.appendChild(profil);
+      boxlist.appendChild(divCompetences);
 
-      var promotions = document.createElement('p');    
+             
+            // creating checkbox element
+            var checkbox = document.createElement('input');
+             
+            // Assigning the attributes
+            // to created checkbox
+            checkbox.type = "checkbox";
+            checkbox.name = "name";
+            checkbox.value = "value";
+            checkbox.id = "id";
+             
+            // creating label for checkbox
+            var label = document.createElement('label');
+             
+            // assigning attributes for 
+            // the created label tag 
+            label.htmlFor = "id";
+             
+            // appending the created text to 
+            // the created label tag 
+            label.appendChild(document.createTextNode('This is the label for checkbox.'));
+             
+            // appending the checkbox
+            // and label to div
+            checkbox.appendChild(checkbox);
+            checkbox.appendChild(label);
+  });
 
-      promotions.innerHTML = `${author.promotions}`;    
-
-      divCard.appendChild(promotions);
-      list.appendChild(divCard);
-
-    });
-
-  input.appendChild(list1);
+  checkbox.appendChild(boxlist);
 
 })
 
 .catch(function(error) {
-  console.log(error);
+  console.log(data);
 });
-  

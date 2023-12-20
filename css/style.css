@@ -10,8 +10,6 @@ body{
   }
 
 /**___________________________header_____________________*/
-
-
 header {
   width: 100%;
 
@@ -89,10 +87,6 @@ h4{
 }
 
 /**__________________________________Card________________________________*/
-
-
-
-
 .card-holder {
     width: 280px;
     height: 380px;
@@ -103,6 +97,13 @@ h4{
     display: inline-block;
     text-align: center;
   }
+
+  .card-holder a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   
 .card-holder a img {
     width: 30px;
@@ -122,7 +123,6 @@ h4{
   }
 
 /**__________________________________footer__________________________________*/
-
 .footer{
   margin: 0;
   font-family: 'Lucida Sans';
@@ -167,7 +167,7 @@ footer h3 {
 
 .links{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -181,6 +181,5 @@ footer h3 {
 .link-lk{
   background: url('../image/linkedin.png');
   background-size: cover;
-
-}
+  }
 
