@@ -78,21 +78,9 @@ const ul = document.getElementById('list');
      //HEADER JS
 
 
-    
+    const url1 = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions'   
     const list1 = document.createDocumentFragment();
     const input = document.getElementById('promolist'); 
-    
-    /* <nav class="header">
-            <div class="promotion">
-                <label for="promo">Promotion:</label>
-                <select name="promo" id="promo">
-                    <option value="2021-2022">2021-2022</option>    
-                    <option value="2022-2023">2022-2023</option>
-                    <option value="2023-2024">2023-2024</option>                    
-                </select>
-            </div> */
-
-    const url1 = 'https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions'
 
 
     fetch(url1)
@@ -140,68 +128,31 @@ const ul = document.getElementById('list');
   })
   .then((data) => {
     let authors = data;
-    // var name = promotion;
-    //   name => Array[
-    //   "0", "name"
-    // ]
 
-      authors.map(function(author) {
 
-    console.log(data)
-    let divCard = document.createElement('div');
-      divCard.className = "card-holder";     
+      
+      
+      authors.map(function(author){
 
-       // creating checkbox element
-       var checkbox = document.createElement('input');
-             
-       // Assigning the attributes
-       // to created checkbox
-       checkbox.type = "checkbox";
-       checkbox.name = "name";
-       checkbox.value = "value";
-       checkbox.id = "id";
+        let element = document.createElement('li');
+        element.className = "choix";     
 
-      let divCompetences = document.createElement('div');
-      divCompetences.className = "competences choix";     
-      console.log(data)
-      var profil = document.createElement("checkbox");
-      profil.setAttribute("type", "checkbox");
-      profil.innerHTML = `${author.competences}`;
-      divCompetences.appendChild(profil);
-      boxlist.appendChild(divCompetences);
 
-             
-            // creating checkbox element
-            var checkbox = document.createElement('input');
-             
-            // Assigning the attributes
-            // to created checkbox
-            checkbox.type = "checkbox";
-            checkbox.name = "name";
-            checkbox.value = "value";
-            checkbox.id = "id";
-             
-            // creating label for checkbox
-            var label = document.createElement('label');
-             
-            // assigning attributes for 
-            // the created label tag 
-            label.htmlFor = "id";
-             
-            // appending the created text to 
-            // the created label tag 
-            label.appendChild(document.createTextNode('This is the label for checkbox.'));
-             
-            // appending the checkbox
-            // and label to div
-            checkbox.appendChild(checkbox);
-            checkbox.appendChild(label);
-  });
+        let inp = document.createElement('input');
+        inp.className = "inputs";     
 
-  checkbox.appendChild(boxlist);
+        inp.type = 'checkbox';
+        inp.name = `${author.name}`;
+        boxlist.appendChild(inp);
 
-})
-
-.catch(function(error) {
-  console.log(data);
-});
+        let lab = document.createElement('label');
+        lab.htmlFor = `${author.name}`;
+        lab.innerHTML = `${author.name}`;
+        boxlist.appendChild(lab);
+          
+        })
+        checkbox.appendChild(boxlist);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });

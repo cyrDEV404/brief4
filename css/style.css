@@ -44,11 +44,13 @@ h4{
   font-weight: bold;
 }
 .competences{
-  width: 25%;
   display: flex;
-  flex-direction: column;
-  margin-right: none;
- 
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column; 
 }
 .recherche{
   width: 50%;
@@ -80,11 +82,7 @@ h4{
   background-repeat: no-repeat; 
 
 }
-.choix{
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: left;
-}
+
 
 /**__________________________________Card________________________________*/
 .card-holder {
