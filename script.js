@@ -22,7 +22,7 @@ console.log(list)
       divCard.className = "card-holder";     
 
       let nom = document.createElement('h2');
-      nom.innerHTML = `${author.nom}`;
+      nom.innerHTML = author.nom;
       divCard.appendChild(nom);
       list.appendChild(divCard);
 
