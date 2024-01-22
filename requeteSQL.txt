@@ -1,0 +1,51 @@
+SELECT DISTINCT(id_region) FROM departement 
+ORDER BY id_region ASC
+
+SELECT nom_dep from departement
+WHERE pop_2017 <= 100000
+
+SELECT code_dep, nom_dep FROM departement
+WHERE nb_communes_dep
+BETWEEN '100' AND 300
+
+SELECT code_dep, nom_dep, id_dep FROM departement
+WHERE nb_communes_dep
+BETWEEN 100 AND 300
+
+SELECT nom_dep FROM departement
+WHERE nom_dep LIKE '____'
+
+SELECT nom_dep FROM departement
+WHERE LENGTH(nom_dep) = 4
+
+SELECT nom_dep FROM departement
+WHERE nom_dep LIKE '%loire'
+
+SELECT nom_dep FROM departement
+WHERE nom_dep LIKE '%loire%'
+
+SELECT nom_dep FROM departement ORDER BY pop_2017 DESC;
+
+SELECT nom_dep, pop_2017 FROM departement
+ORDER BY pop_2017 ASC LIMIT 3;
+
+SELECT nom_dep FROM departement WHERE id_region!=11;
+
+SELECT COUNT(*) FROM region;
+
+
+
+SELECT COUNT(*) 
+AS "nb_region" FROM departement
+
+SELECT min(pop_2017), nom_dep FROM `departement` 
+
+SELECT nom_dep, nom_region FROM departement AS t1, region AS t2
+WHERE t1.id_region = t2.id_reg
+AND t2.nom_region = 'occitanie';
+
+SELECT t1.nom_dep,t2.nom_region FROM departement AS t1 INNER JOIN region AS t2 ON t1.id_region = t2.id_reg AND t2.nom_region='occitanie';
+
+SELECT DISTINCT * FROM favoris AS T1 INNER JOIN cat_fav AS T2 INNER JOIN categorie AS T3
+ON T1.id_fav=T2.id_fav AND T2.id_cat=T3.id_cat WHERE T3.nom_cat='e-projet';
+
